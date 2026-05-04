@@ -33,7 +33,7 @@ class DownloaderShell(Cmd):
         if len(args) == 2:
             if args[0] in ["al", "album"]:
                 url = args[1]
-                title = "./downloads/%(playlist_title)s/%(playlist_index+1)d - %(title)s.%(ext)s"
+                title = "./downloads/%(playlist_title)s/%(playlist_index)d - %(title)s.%(ext)s"
             else:
                 # error out
                 print(f"[ERROR]: unknown argument '{args[0]}'. Run 'help audio' to see proper usage.")
@@ -65,7 +65,7 @@ class DownloaderShell(Cmd):
         if len(args) == 2:
             if args[0] in ["al", "album"]:
                 url = args[1]
-                title = "./downloads/%(playlist_title)s/%(playlist_index+1)d - %(title)s.%(ext)s"
+                title = "./downloads/%(playlist_title)s/%(playlist_index)d - %(title)s.%(ext)s"
             else:
                 # error out
                 print(f"[ERROR]: unknown argument '{args[0]}'. Run 'help audio' to see proper usage.")
